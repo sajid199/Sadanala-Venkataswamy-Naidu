@@ -1773,6 +1773,76 @@ section,
   opacity: 0.4;
 }
 
+/* Literary Profile Section Styles */
+#literary-profile .service-item {
+  background-color: #f9f5f0;
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+#literary-profile .service-item:hover {
+  background-color: #f0e6d2;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#literary-profile .service-item .icon {
+  width: 64px;
+  height: 64px;
+  background-color: #e6d3b3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #5a4a3c;
+  transition: all 0.3s ease;
+}
+
+#literary-profile .service-item:hover .icon {
+  background-color: #5a4a3c;
+  color: #f9f5f0;
+}
+
+#literary-profile .service-item h3 {
+  color: #5a4a3c;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Cardo', serif;
+}
+
+#literary-profile .service-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#literary-profile .service-item ul li {
+  margin-bottom: 10px;
+  color: #6c757d;
+  position: relative;
+  padding-left: 20px;
+}
+
+#literary-profile .service-item ul li:before {
+  content: '•';
+  color: #5a4a3c;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+#literary-profile .service-item ul ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#literary-profile .service-item ul ul li:before {
+  content: '◦';
+  color: #8a6d3b;
+}
+
 /* Active Navigation Link Styling */
 .navbar .nav-link.active,
 .navmenu .nav-link.active,
