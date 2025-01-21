@@ -1578,28 +1578,28 @@ section,
 # Wikipedia Reference Section
 --------------------------------------------------------------*/
 .wikipedia-reference {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: var(--body-background-color);
   padding: 60px 0;
   color: var(--default-color);
 }
 
 .wikipedia-reference .wikipedia-content {
   background-color: var(--white-section-background);
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .wikipedia-reference .wikipedia-content:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .wikipedia-reference h2 {
   font-family: var(--heading-font);
   color: var(--default-color);
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   position: relative;
   padding-bottom: 15px;
 }
@@ -1610,15 +1610,15 @@ section,
   bottom: 0;
   left: 50%;
   width: 100px;
-  height: 3px;
+  height: 2px;
   background-color: var(--accent-color);
   transform: translateX(-50%);
 }
 
 .wikipedia-reference p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .wikipedia-reference .wikipedia-link {
@@ -1626,38 +1626,46 @@ section,
 }
 
 .wikipedia-reference .btn-primary {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 15px 30px;
-  font-size: 1rem;
-  border-radius: 50px;
-  transition: all 0.3s ease;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
 }
 
 .wikipedia-reference .btn-primary i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-right: 8px;
 }
 
 .wikipedia-reference .btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
 }
 
 .wikipedia-reference .significance-note {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .wikipedia-reference blockquote {
   font-family: var(--heading-font);
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--default-color);
   position: relative;
-  padding-left: 30px;
+  padding-left: 25px;
+  line-height: 1.6;
 }
 
 .wikipedia-reference blockquote::before {
@@ -1665,7 +1673,7 @@ section,
   position: absolute;
   left: 0;
   top: -10px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--accent-color);
-  opacity: 0.5;
+  opacity: 0.4;
 }
