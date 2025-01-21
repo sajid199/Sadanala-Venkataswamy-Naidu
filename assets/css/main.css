@@ -1573,3 +1573,99 @@ section,
     margin-bottom: 10px;
   }
 }
+
+/*--------------------------------------------------------------
+# Wikipedia Reference Section
+--------------------------------------------------------------*/
+.wikipedia-reference {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  padding: 60px 0;
+  color: var(--default-color);
+}
+
+.wikipedia-reference .wikipedia-content {
+  background-color: var(--white-section-background);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.wikipedia-reference .wikipedia-content:hover {
+  transform: translateY(-10px);
+}
+
+.wikipedia-reference h2 {
+  font-family: var(--heading-font);
+  color: var(--default-color);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.wikipedia-reference h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  height: 3px;
+  background-color: var(--accent-color);
+  transform: translateX(-50%);
+}
+
+.wikipedia-reference p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.wikipedia-reference .wikipedia-link {
+  margin-bottom: 30px;
+}
+
+.wikipedia-reference .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.wikipedia-reference .btn-primary i {
+  font-size: 1.5rem;
+}
+
+.wikipedia-reference .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wikipedia-reference .significance-note {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.wikipedia-reference blockquote {
+  font-family: var(--heading-font);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--default-color);
+  position: relative;
+  padding-left: 30px;
+}
+
+.wikipedia-reference blockquote::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 3rem;
+  color: var(--accent-color);
+  opacity: 0.5;
+}
