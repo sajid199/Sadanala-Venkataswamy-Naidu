@@ -929,6 +929,77 @@ section,
   margin: 0;
 }
 
+/* Gallery Section Title Styling */
+.gallery .section-title-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  padding: 20px;
+  background-color: color-mix(in srgb, var(--background-color), transparent 90%);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.gallery .section-title-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery .section-title-wrapper p {
+  font-size: 1.1rem;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 20px;
+}
+
+.gallery .section-divider {
+  position: relative;
+  width: 100px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.gallery .section-divider::before,
+.gallery .section-divider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 3px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.gallery .section-divider::before {
+  left: -15px;
+  transform: skew(-30deg);
+}
+
+.gallery .section-divider::after {
+  right: -15px;
+  transform: skew(30deg);
+}
+
+@media (max-width: 768px) {
+  .gallery .section-title-wrapper {
+    padding: 15px;
+  }
+
+  .gallery .section-title-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .gallery .section-title-wrapper p {
+    font-size: 1rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
