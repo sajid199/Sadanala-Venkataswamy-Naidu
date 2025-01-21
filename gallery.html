@@ -52,25 +52,7 @@
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="gallery.html" class="active"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="gallery.html" class="active">Nature</a></li>
-              <li><a href="gallery.html" class="active">People</a></li>
-              <li><a href="gallery.html" class="active">Architecture</a></li>
-              <li><a href="gallery.html" class="active">Animals</a></li>
-              <li><a href="gallery.html" class="active">Sports</a></li>
-              <li><a href="gallery.html" class="active">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -89,121 +71,47 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Gallery</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-              <a href="contact.html" class="cta-btn">Available for Hire<br></a>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Occasions Gallery</h2>
+          <p class="text-muted lead">Capturing Life's Most Precious Moments</p>
+        </div>
+
+        <div class="row gy-4 justify-content-center" id="occasionsGallery">
+          <!-- Images will be dynamically loaded here -->
+        </div>
+      </div>
+    </section><!-- /Gallery Section -->
+
+    <!-- YouTube Videos Section -->
+    <section id="youtube-videos" class="youtube-videos section bg-light">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Video Highlights</h2>
+          <p class="text-muted lead">Relive the Moments Through Our Curated Collection</p>
+        </div>
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="youtube-video-item shadow-sm rounded overflow-hidden">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Occasion Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="youtube-video-item shadow-sm rounded overflow-hidden">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="Occasion Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="youtube-video-item shadow-sm rounded overflow-hidden">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Occasion Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Gallery</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-8-2.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-8-2.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
+    </section><!-- /YouTube Videos Section -->
 
   </main>
 
@@ -211,7 +119,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">PhotoFolio</strong> <span>All Rights Reserved</span></p>
+        <p> <span>Copyright</span> <strong class="px-1 sitename">PhotoFolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -247,6 +155,160 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Dynamic Image Loading Script
+    document.addEventListener('DOMContentLoaded', function() {
+      const occasionsGallery = document.getElementById('occasionsGallery');
+      
+      // Complete list of image paths in the Occassions folder
+      const imagePaths = [
+        'assets/img/gallery/Occassions/IMG-20250119-WA0035.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0037.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0038.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0039.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0040.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0041.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0042.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0043.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0044.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0045.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0047.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0048.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0049.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0050.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0051.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0052.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0053.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0054.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0055.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0056.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0057.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0058.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0059.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0060.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0061.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0062.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0063.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0064.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0068.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0076.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0077.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0078.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0079.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0080.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0081.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0082.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0083.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0084.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0085.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0086.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0087.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0088.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0089.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0090.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0091.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0092.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0093.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0094.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0095.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0096.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0097.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0098.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0099.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0102.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0103.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0104.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0105.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0107.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0108.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0109.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0110.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0111.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0112.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0113.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0114.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0116.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0118.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0119.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0120.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0121.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0122.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0123.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0124.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0125.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0126.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0129.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0130.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0131.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0132.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0133.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0134.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0135.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0136.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0137.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0141.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0142.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0143.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0144.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0145.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0146.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0147.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0148.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0149.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0150.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0151.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0152.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0153.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0154.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0155.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0156.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0157.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0158.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0159.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0160.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0162.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0163.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0164.jpg',
+        'assets/img/gallery/Occassions/IMG-20250119-WA0169.jpg'
+      ];
+
+      // Shuffle array to randomize image display
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      const shuffledImages = shuffleArray(imagePaths);
+      
+      shuffledImages.forEach((imagePath, index) => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'col-xl-3 col-lg-4 col-md-6';
+        galleryItem.innerHTML = `
+          <div class="gallery-item h-100 position-relative overflow-hidden shadow-sm rounded">
+            <img src="${imagePath}" class="img-fluid w-100 h-100 object-fit-cover" alt="Occasion Image ${index + 1}">
+            <div class="gallery-links position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+              <a href="${imagePath}" title="Occasion Image ${index + 1}" class="glightbox preview-link text-white bg-dark bg-opacity-50 p-3 rounded-circle">
+                <i class="bi bi-arrows-angle-expand fs-4"></i>
+              </a>
+              <a href="#" class="details-link text-white bg-dark bg-opacity-50 p-3 rounded-circle ms-3">
+                <i class="bi bi-info-circle fs-4"></i>
+              </a>
+            </div>
+          </div>
+        `;
+        occasionsGallery.appendChild(galleryItem);
+      });
+
+      // Reinitialize GLightbox after dynamic content load
+      const lightbox = GLightbox({
+        selector: '.glightbox'
+      });
+    });
+  </script>
 
 </body>
 
