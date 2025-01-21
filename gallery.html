@@ -289,14 +289,13 @@
         galleryItem.className = 'col-xl-3 col-lg-4 col-md-6';
         galleryItem.innerHTML = `
           <div class="gallery-item h-100 position-relative overflow-hidden shadow-sm rounded">
-            <img src="${imagePath}" class="img-fluid w-100 h-100 object-fit-cover" alt="Occasion Image ${index + 1}">
-            <div class="gallery-links position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-              <a href="${imagePath}" title="Occasion Image ${index + 1}" class="glightbox preview-link text-white bg-dark bg-opacity-50 p-3 rounded-circle">
-                <i class="bi bi-arrows-angle-expand fs-4"></i>
-              </a>
-              <a href="#" class="details-link text-white bg-dark bg-opacity-50 p-3 rounded-circle ms-3">
-                <i class="bi bi-info-circle fs-4"></i>
-              </a>
+            <div class="gallery-item-inner">
+              <img src="${imagePath}" class="img-fluid w-100 h-100 object-fit-cover" alt="Occasion Image ${index + 1}">
+              <div class="gallery-links">
+                <a href="${imagePath}" title="View Full Image" class="glightbox preview-link">
+                  <i class="bi bi-arrows-angle-expand"></i>
+                </a>
+              </div>
             </div>
           </div>
         `;
