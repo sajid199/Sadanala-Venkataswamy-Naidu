@@ -23,7 +23,7 @@
   --body-background-color: #FFEBCD; /* BlanchedAlmond for main body background */
   --white-section-background: #FFFFFF; /* Pure white for specific sections */
   --default-color: #333333; /* Dark gray for text for better readability */
-  --heading-color: #FFFFFF; /* White headings in header */
+  --heading-color: #000000; /* Black headings for better contrast */
   --accent-color: #27a776; /* Keeping the original accent color */
   --surface-color: #F5F5F5; /* Light gray for surface elements */
   --contrast-color: #FFFFFF; /* White for contrast */
@@ -66,6 +66,7 @@ body {
   color: var(--default-color);
   background-color: var(--body-background-color);
   font-family: var(--default-font);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Add subtle text shadow for better readability */
 }
 
 a {
@@ -87,6 +88,7 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* Stronger text shadow for headings */
 }
 
 /* PHP Email Form Messages
@@ -767,6 +769,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
   font-family: var(--default-font);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .section-title h2::after {
@@ -998,6 +1001,136 @@ section,
   .gallery .section-title-wrapper p {
     font-size: 1rem;
   }
+}
+
+.gallery .gallery-item-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .gallery-item-inner img {
+  width: 100%;
+  height: 300px; /* Fixed height for consistent sizing */
+  object-fit: cover; /* Ensures image covers entire area without distortion */
+  object-position: center; /* Centers the image content */
+  transition: transform 0.3s ease;
+}
+
+.gallery .gallery-item-inner .gallery-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery .gallery-item-inner:hover .gallery-links {
+  opacity: 1;
+}
+
+.gallery .gallery-item-inner .gallery-links a {
+  color: #ffffff;
+  background-color: rgba(39, 167, 118, 0.8); /* Accent color with transparency */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.gallery .gallery-item-inner .gallery-links a:hover {
+  background-color: rgba(39, 167, 118, 1);
+}
+
+.gallery .gallery-item-inner .gallery-links a i {
+  font-size: 24px;
+}
+
+.gallery .gallery-item-inner:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.gallery .row.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; /* Compensate for column padding */
+}
+
+.gallery .gallery-item {
+  padding: 15px 15px; /* Add vertical and horizontal padding */
+  box-sizing: border-box;
+}
+
+.gallery .gallery-item-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0; /* Remove any bottom margin */
+}
+
+.gallery .gallery-item-inner img {
+  width: 100%;
+  height: 300px; /* Fixed height for consistent sizing */
+  object-fit: cover; /* Ensures image covers entire area without distortion */
+  object-position: center; /* Centers the image content */
+  transition: transform 0.3s ease;
+}
+
+.gallery .gallery-item-inner .gallery-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery .gallery-item-inner:hover .gallery-links {
+  opacity: 1;
+}
+
+.gallery .gallery-item-inner .gallery-links a {
+  color: #ffffff;
+  background-color: rgba(39, 167, 118, 0.8); /* Accent color with transparency */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.gallery .gallery-item-inner .gallery-links a:hover {
+  background-color: rgba(39, 167, 118, 1);
+}
+
+.gallery .gallery-item-inner .gallery-links a i {
+  font-size: 24px;
+}
+
+.gallery .gallery-item-inner:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 /*--------------------------------------------------------------
