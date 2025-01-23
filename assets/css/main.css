@@ -1803,3 +1803,53 @@ section,
 .card:hover, .section:hover {
   box-shadow: initial;
 }
+
+/* Translation Toggle Styles */
+.translation-toggle {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.translation-toggle .btn-group .btn {
+  transition: all 0.3s ease;
+}
+
+.translation-toggle .btn-group .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Enhanced Pricing and Testimonial Styles */
+.pricing-item.card,
+.testimonial-item.card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.pricing-item.card:hover,
+.testimonial-item.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
