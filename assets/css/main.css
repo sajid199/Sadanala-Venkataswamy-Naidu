@@ -20,7 +20,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --header-background-color: #714533; /* Updated header background color */
-  --body-background-color: #FFEBCD; /* BlanchedAlmond for main body background */
+  --body-background-color: #f4f4f8; /* A soft, light blue-gray that provides a clean, modern background */
   --white-section-background: #FFFFFF; /* Pure white for specific sections */
   --default-color: #333333; /* Dark gray for text for better readability */
   --heading-color: #000000; /* Black headings for better contrast */
